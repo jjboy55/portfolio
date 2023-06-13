@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            var number = 200;
+            
+            function guessing(){
+                var count = 0;
+                
+                while( count < 5){               
+               var a = prompt("Enter the number");
+               if(number > parseInt(a)){
+                   alert("wrong number");
+               }else if(number < parseInt(a)){
+                   alert("wrong number too high");
+               }else if(number == parseInt(a)){
+                   alert("correct number");
+                   break;
+                }
+                    count++;
+                } 
+            }
+            guessing();
+     </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

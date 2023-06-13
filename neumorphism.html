@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <style>
+         #main{
+         width: 100%;
+         height: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         }
+         #video{
+                  
+             z-index: -1;
+             position: absolute;
+             
+             height: 100%;
+             background-position:center;
+             background-repeat: no-repeat;
+             background-size: cover;
+             
+         }
+         #select{
+             width: 400px;
+             height: 500px;
+             background-color: rgba(255, 255, 255,0);
+             transition: 500ms;
+             box-shadow: -10px -10px 20px rgba(245, 245, 245,0.6),10px 10px 20px rgba(245, 245, 245,0.5);
+             border-radius: 30px;
+             text-align: center;
+             color: white;
+             font-size: x-large;
+             
+         }
+         .column{
+            display: flex;
+             flex-direction: column;
+             position: absolute;
+             bottom: 350px;
+             
+         }
+         .username{
+            display: flex;
+         justify-content: center;
+         align-items: center;
+             width: 250px;
+             height: 50px;
+             background-color: rgba(245, 245, 245,0);
+             box-shadow: -10px -10px 20px rgba(255, 255, 255,0.5),10px 10px 20px rgba(100, 100, 100,0.4);
+             border-radius: 30px;
+             margin-bottom: 20px;
+             margin-left: 80px;   
+         }
+         .text{
+           
+             border: none;
+             background: transparent;
+             outline: 0;
+             color: white;
+            
+         }
+         .text::placeholder{
+             font-size:medium ;
+             color: white;
+
+         }
+         
+         
+        </style>
+    </head>
+    <body>
+        <div>  
+            <div id="main">
+                
+                    <div id="select">
+                        <h1>Login</h1>
+                        <div class="column">
+                           <div class="username">
+                               <input class="text" type="Username" placeholder="Username">
+                           </div>
+                                <div class="Username">
+                                    <input class="text" type="Username"
+                                    placeholder="Password">
+                                </div>
+                                <div class="username">
+                                    <h3>Login</h3>
+                                </div></div>
+                            
+                    </div>
+                    <video id="video" autoplay muted loop>
+                        <source src="video 2.mp4">       
+                    </video>
+                
+                
+                
+                   
+               
+                
+            </div>
+            
+         
+        </div>
+    </body>
+</html>

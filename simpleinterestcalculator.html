@@ -1,0 +1,30 @@
+<html>
+    <head>
+      <script>
+          function SI(){
+            var principal = document.getElementById('principal').value;
+             var rate = document.getElementById('rate').value;
+             var time = document.getElementById('time').value;
+            var SI = (principal*rate*time)/100;
+            console.log(SI);
+            var ans = document.getElementById('ans');
+            ans.innerText = SI;
+            
+          }
+          SI();
+          function typeText(event){
+            if(event.key === "a"){
+            document.getElementById('ans').innerText+=event.key}}
+          typeText();
+          
+      </script>
+    </head>
+    <body onkeyup="typeText"> 
+        <input id="principal"type="text">
+        <input id="rate"type="text">
+        <input id="time"type="text">
+        <button onclick="SI()" id="calculate">calculate</button>
+        <h1 id="ans">0.0</h1>
+        <div></div>
+    </body>
+</html>

@@ -1,0 +1,297 @@
+@font-face{
+    src: url(fonts/Poppins-SemiBold.ttf);
+    font-family:poppins;
+}
+@font-face{
+    src: url(fonts/Poppins-Medium.ttf);
+    font-family: poppinsmed;
+}
+*{
+margin: 0;
+padding: 0;
+}
+body{
+    background: #000;
+    font-family: poppins;
+    position: relative;
+    
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.container{
+    margin-left: 5em;
+    margin-top: 3em;
+    margin-right: 6em;
+}
+#ig{
+    float: right;
+    position: absolute;
+    margin-right: 6em;
+    right: 0;
+    width: 40px;
+}
+.logo{
+    float: left;   
+}
+
+nav{
+    float:right;
+}
+nav ul {
+    
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    margin-right: 11em;
+   
+    
+}
+nav li{
+    
+    display: inline-block;
+    margin-left: 3em;
+    margin-top: 1em;
+    position: relative;
+    
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;  
+}
+nav a:hover{
+    color:#ff914d;
+}
+
+nav a::before{
+    content:'';
+    display: block;
+    height: 3px;
+    width: 0;
+    background-color: #ff914d;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s;
+}
+nav a:hover::before{
+    width:100%;
+}
+.herotext{
+    margin-left: 6em;
+    margin-top: 3em;
+    margin-right: 6em;
+    position: relative;
+    
+}
+#column1{
+    width: 50%;
+}
+#column2{
+    width: 50%;
+}
+.herotext > #column1 > h1{
+    margin-top: 5em;
+    color: white;
+    font-size: 40px;
+    
+}
+.herotext > #column1 > #text2{
+    color: #C8C8C8;
+    font-size: 10px;
+    margin-top: 2em;
+    letter-spacing: 0.3em;
+}
+.herotext > #column2 >#circle  {
+    position: absolute;
+    right: 0;
+    width: 500px;
+    top:-5em;
+}
+.artexhibtion{
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    margin-top: 17em;
+    position: relative;
+    display: flex;
+    z-index: 0;
+    
+}
+.artexhibtion > #blackelipse{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 200px;
+   
+}
+
+.artexhibtion > #orange{
+    margin-top: 1em;
+    width: 200px;
+    position: absolute;
+    top: 0;    
+}
+.column3{
+    width: 70%;
+    margin-left: 6em;
+    margin-top: 11em;
+    z-index: 3;
+}
+#digital{
+    letter-spacing: 0.2em;
+    font-size: 1em;
+}
+#under{
+    line-height: 2em ;
+    font-size: 1.5em;
+}
+.column4{   
+    width: 40%;
+    margin-right: 5em;    
+}
+#img{
+    width:488px;  
+}
+.text{
+    color: #676767;
+    font-family: poppinsmed;  
+}
+.myservices{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+#services{
+    position: absolute;
+    top: 0;
+    left: 45%;
+    margin-top: 3em;
+    letter-spacing: 0.3em;
+}
+#orange2{
+    width: 200px;
+    margin-top: 1em;
+}
+#orange3{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    z-index: 0;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: -7em;
+    
+}
+#column_1{
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    margin-left: 1em;
+    border-radius: 30px;
+    color: black;
+    position: relative;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+#column_1:hover{
+    background-color: #ff914d;
+    width: 330px;
+    height: 430px;
+}
+#ruler{
+    width: 120px;
+    
+}
+#graphics_1{
+    margin-top: 0.4em;
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-bottom: 0.4em;
+}
+#ipsum{
+
+    font-size: 1em;
+    font-family: poppinsmed;
+    color: #676767;
+    
+}
+#sit{
+    font-size: 1em;
+    font-family: poppinsmed;
+    color: #676767;
+     
+}
+#nunc{
+    font-size: 1em;
+    font-family: poppinsmed;
+    color: #676767; 
+}
+
+#column_2{
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    margin-left: 1.5em;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+   
+}
+#column_2:hover{
+    background-color: #ff914d;
+    width: 330px;
+    height: 430px;}
+#paint{
+    width: 120px;
+}
+#digitalart{
+    margin-top: 0.4em;
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-bottom: 0.4em;
+    color: black;
+}
+
+#column_3{
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    margin-left: 1.5em;
+    z-index: 1;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;   
+}
+#column_3:hover{
+    background-color: #ff914d;
+    width: 330px;
+    height: 430px;}
+
+#dev{
+    margin-top: -0.5em;
+    color: black;
+    font-size: 1.5em;
+}
+

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box{
+    width: 400px;
+    height: 200px;
+    background-color: green;
+    position: relative;
+    transition: 500ms;
+    border-radius: 30px;
+}
+#box:hover{
+width: 800px;
+height: 800px;
+background-color: thistle;
+transform: rotateZ(180deg);
+}
+
+        </style>
+    </head>
+    <body>
+       <div id="main"></div>
+       <div id="box"></div> 
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+    <style>
+        
+    </style>
+    <style>
+        body{
+            margin:0;
+        }
+        
+        #main{
+            height:100%;
+            width:100%;
+        }
+
+        #top{
+            background-color: rgb(14, 14, 14);
+            width:100%;
+            height:50vh;
+            display: flex;
+            padding-bottom: 2px;
+            flex-direction: row;
+            justify-content: space-evenly;
+            resize:both;
+        }
+
+        #display{
+            width:100%;
+            height:50vh;
+        }
+
+        .codeA{
+            width:32%;
+            height:90%;
+            border: 1px solid rgb(40,40,40);
+            margin-top:20px;
+        }
+
+        .codeTitle{
+            color:rgb(255,255,255);
+            font-size:70%;
+            height:8%;
+            width:14%;
+            background-color: rgb(50,50,50);
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            border-top: 2px solid rgb(80,80,80);
+        }
+
+        .code{
+            width:100%;
+            height:88.88%;
+            background-color: rgb(50,50,50);
+            border: none;
+            resize: none;
+            color: rgb(223, 174, 68);
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        .code:focus{
+            outline: none;
+        }
+    </style>
+</head>
+<body onkeyup="displayCode(event)">
+    <div id="main">
+        <div id="top">
+            <div class="codeA">
+                <div class="codeTitle">HTML</div>
+                <textarea id="html" class="code"></textarea>
+            </div>
+            <div class="codeA">
+                <div class="codeTitle">CSS</div>
+                <textarea id="css" class="code"></textarea>
+            </div>
+            <div class="codeA">
+                <div class="codeTitle">JS</div>
+                <textarea id="javascript" class="code"></textarea>
+            </div>
+        </div>
+        <div id="display">
+
+        </div>
+    </div>
+</body>
+</html>
